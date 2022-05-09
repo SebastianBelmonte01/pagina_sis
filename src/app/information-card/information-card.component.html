@@ -1,3 +1,15 @@
-<div class="container__card">
-    <img src="https://ucblpz.com/wp-content/uploads/2020/01/SIS.jpg" alt="img">
+<!-- https://ucblpz.com/wp-content/uploads/2020/01/SIS.jpg -->
+<div class="infromation-card-container">
+    <h3>{{generalTitle}}</h3>
+    <div class="container__card">
+        <img src="{{img}}" alt="img">
+        <div class="information">
+            <h3>{{title}}</h3>
+            <div class="information__card-list">
+                <ul *ngFor="let item of list">
+                    <li> - {{item}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </div>

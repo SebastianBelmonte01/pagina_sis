@@ -1,4 +1,51 @@
-<app-header></app-header>
-  <app-information-card></app-information-card>
+<div class="app-container">
+  <app-header></app-header>
+    <app-information-card 
+    [list]="[
+    'Carrera acreditada.',
+    'Mercado laboral creciente.',
+    'Demanda de TICs creciente en un mercado globalizado.',
+    'Laboratorios especializados en la aplicación práctica del conocimiento.',
+    '200 horas de prácticas guiadas.',
+    'Una práctica profesional garantizada.'
+    ]"
 
-<app-footer></app-footer>
+    [title]="'Beneficios de estudiar esta carrera en la U.C.B.'"
+    [generalTitle] = "''"
+    [img]="'https://ucblpz.com/wp-content/uploads/2020/01/SIS.jpg'"
+    ></app-information-card>
+ 
+    <div class="image-container">
+      <div class="image-container--center">
+        <img src="/assets/sis1.png" alt="">
+        <img src="/assets/sis2.png" alt="">
+      </div>
+    </div>
+
+    <app-information-card 
+    [list]="[
+    'Actividades.',
+    'Programación competitiva.',
+    'Juegos entre carreras.',
+    'Presencia del Google Developer Student Club.',
+    'Microsoft Club',
+    'IEEE Club Computer Society'
+    ]"
+
+    [title]="'Actividades Realizadas Dentro de la Carrera.'"
+    [generalTitle] = "''"
+    [img]="'/assets/icpc.png'"
+    ></app-information-card>
+
+    <div class="image-container">
+      <div class="image-container--center">
+        <img src="/assets/icpc2.png" alt="">
+        <img src="/assets/ieee.jpg" alt="">
+        <img src="/assets/gdsc.png" alt="">
+      </div>
+    </div>
+
+    <app-contacto></app-contacto>
+
+  <app-footer></app-footer>
+</div>

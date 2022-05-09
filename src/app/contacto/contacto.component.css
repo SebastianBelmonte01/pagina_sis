@@ -1,0 +1,7 @@
+.contacto-container {
+    display: flex;
+}
+
+.contacto-container--center {
+    margin: 0 auto;
+}
