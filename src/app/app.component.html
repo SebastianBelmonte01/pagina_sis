@@ -37,6 +37,8 @@
     [img]="'/assets/icpc.png'"
     ></app-information-card>
 
+
+
     <div class="image-container">
       <div class="image-container--center">
         <img src="/assets/icpc2.png" alt="">
@@ -45,7 +47,23 @@
       </div>
     </div>
 
+    <app-information-card 
+    [list]="[
+    'En empresas públicas y privadas, en las que funcionen sistemas de información computacional.',
+    'En empresas de producción de software.',
+    'En emprendimientos propios, en el desarrollo de software, mantenimiento de tecnología computacional.',
+    'En consultorías como programador, analista de sistemas, entre otros',
+    ]"
+
+    [title]="'¿Dónde podrás trabajar?'"
+    [generalTitle] = "'Campo Laboral'"
+    [img]="'https://ucblpz.com/wp-content/uploads/2020/04/Ing.-Sistemas.jpg'"
+    ></app-information-card>
+
+
     <app-contacto></app-contacto>
 
   <app-footer></app-footer>
 </div>
+
+
